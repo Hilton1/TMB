@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+:root {
+  --primary-color: rgba(42, 42, 42, 1);
+  --secondary-color: rgba(27, 27, 27, 1);
+  --tertiary-color: rgba(124, 124, 124, 1);
+  --gray-for-option-null: rgba(56, 56, 56, 1);
+  --gray-opacity: rgba(0, 0, 0, 0.6);
+}
+
+* {
+  border: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--primary-color);
+  font-family: 'Rubik', sans-serif;
+  color: white;
+}
+
+header,
+main {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  margin: 60px auto;
+}
+
+header h1 {
+  font-size: 38px;
+}
+
+header p {
+  font-size: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+
+.form-group select,
+.form-group input {
+  padding-left: 36px;
+
+  height: 50px;
+  border-radius: 8px;
+
+  font-size: 14px;
+  
+  background-color: var(--secondary-color);
+}
+
+.form-group input {
+  color: var(--tertiary-color);
+}
+
+.form-group input::placeholder {
+  color: var(--tertiary-color); 
+  font-size: 14px;
+}
+
+
+.form-group select,
+.form-group select option,
+.form-group input {
+  font-weight: bold;
+  font-size: 14px;
+
+  color: white;
+}
+
+.form-group select option:nth-child(1) {
+  font-weight: normal;
+
+  color: var(--tertiary-color); 
+}
+
+button {
+  margin-top: 44px;
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+  
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  
+  font-size: 14px;
+
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+
+  background-color: var(--tertiary-color);
+  color: #FFF;
+
+  text-align: center;
+  align-items: center;
+
+  padding: 15px;
+
+  margin-top: 120px;
+  
+}
+
+footer a {
+  font-weight: bold;
+  color: #FFF;
+  text-decoration: none;
+}
