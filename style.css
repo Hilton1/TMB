@@ -5,7 +5,7 @@
   --secondary-color: rgba(27, 27, 27, 1);
   --tertiary-color: rgba(124, 124, 124, 1);
   --gray-for-option-null: rgba(56, 56, 56, 1);
-  --gray-opacity: rgba(0, 0, 0, 0.6);
+  --gray-opacity: rgba(0, 0, 0, 0.5);
 }
 
 * {
@@ -19,8 +19,6 @@ body {
   background: var(--primary-color);
   font-family: 'Rubik', sans-serif;
   color: white;
-  /* overflow: hidden; */
-
 }
 
 header,

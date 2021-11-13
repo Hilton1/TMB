@@ -38,11 +38,12 @@
         <label for="activity_level">Nível de atividade física</label>
         <select id="activity_level" required>
           <option value="" disabled selected>Selecione...</option>
-          <option value="1.2">Sedentário</option>
-          <option value="1.375">Pouca atividade</option>
-          <option value="1.55">Atividade moderada</option>
-          <option value="1.725">Atividade intensa</option>
-          <option value="1.9">Atividade muito intensa</option>
+          <option value="1.4">Muito sedentário</option>
+          <option value="1.5">Sedentário pouco ativo</option>
+          <option value="1.6">Sedentário mais ativo</option>
+          <option value="1.7">Moderadamente ativo (treina)</option>
+          <option value="1.8">Muito ativo</option>
+          <option value="2">Atividade intensa</option>
         </select>
       </div>
 
@@ -50,7 +51,7 @@
     </form>
   </main>
   <footer>
-    <p>Created by <a href="https://github.com/Hilton1" target="_blank">Hilton Ribeiro</a></p>
+    <p>Created by <a href="https://www.instagram.com/jhiltonr/" target="_blank">Hilton Ribeiro</a></p>
   </footer>
 
   <div class="modal-overlay ">
@@ -59,15 +60,17 @@
         <h2>Resultado: </h2>
 
         <div class="results">
-          <p>Taxa metabólica basal: <b>2113,8</b></p>
-          <p>Média de calorias necessárias para manter o peso: <b>3804,84</b></p>
-          <p>Média de calorias necessárias para perder peso: <b>3454,84</b></p>
-          <p>Média de calorias necessárias para ganhar peso: <b>3454,84</b></p>
+          <p>Taxa metabólica basal: <b id="tmb"></b></p>
+          <p>Média de calorias necessárias para manter o peso: <b id="get"></b></p>
+          <p>Média de calorias necessárias para perder peso: <b id="loseweight"></b></p>
+          <p>Média de calorias necessárias para ganhar peso: <b id="gainweight"></b></p>
         </div>
 
         <button>Voltar</button>
       </div>
     </div>
   </div>
+  
+  <script src="scripts.js"></script>
 </body>
 </html>
